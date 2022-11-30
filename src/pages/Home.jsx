@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import Nav from "../components/nav";
+import Showcase from "../components/showcase";
+import Hero from "../components/hero";
 
 function Home() {
 	return (
 		<div>
-			<h1>This is the home page</h1>
-			<Link to="about">Click to view our about page</Link>
+			<Nav />
+			<Hero />
+			<Showcase />
 		</div>
 	);
 }

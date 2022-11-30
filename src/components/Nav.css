@@ -1,0 +1,45 @@
+.nav {
+	font-family: "Sono", sans-serif;
+	background-color: var(--background);
+	height: 10vh;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.5rem + 0.5vw;
+	flex-wrap: wrap;
+}
+/*justify center if mobile*/
+@media only screen and (max-width: 500px) {
+	.nav {
+		justify-content: center;
+	}
+}
+.navLinks {
+	flex-wrap: nowrap;
+	flex-shrink: 1;
+}
+
+.navLogo {
+	height: 2rem;
+	width: auto;
+	/* if darkmode invert colors */
+	filter: var(--blackImgFilter);
+	padding: 0.5rem;
+}
+
+.navButtons {
+}
+
+.navLogo:hover {
+	/* for --secondary */
+	filter: invert(28%) sepia(78%) saturate(1346%) hue-rotate(309deg)
+		brightness(93%) contrast(95%);
+	/* for --primary */
+	/* filter: invert(30%) sepia(53%) saturate(509%) hue-rotate(182deg)
+		brightness(84%) contrast(84%); */
+	cursor: pointer;
+}
+.navLinks a {
+	padding: 0.5rem;
+}

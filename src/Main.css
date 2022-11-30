@@ -1,0 +1,65 @@
+/* Dark mode (DEFAULT(Cause its better))*/
+:root {
+	--primary: #2d3b5b;
+	--secondary: #b46766;
+	--tertiary: #7a698b;
+	--lightBackground: #333636;
+	--background: #1c1c1e;
+	--darkBackground: #070707;
+	--text: #fffdf7;
+	--darkText: #17161b;
+	--blackImgFilter: invert(97%) sepia(97%) saturate(12%) hue-rotate(197deg)
+		brightness(105%) contrast(104%);
+	--whiteImgFilter: ;
+}
+/* Light mode */
+[data-theme="light"] {
+	--primary: #284b63;
+	--darkBlue: #0b4f6c;
+	--secondary: #b46766;
+	--darkRed: #8d4043;
+	--lightBackground: #c4e9d0;
+	--background: #d7d1cf;
+	--darkBackground: #353535;
+	--text: #000000;
+	--darkText: #ffffff;
+	--blackImgFilter: ;
+	--whiteImgFilter: invert(97%) sepia(97%) saturate(12%) hue-rotate(197deg)
+		brightness(105%) contrast(104%);
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: calc(15px + 0.5vw);
+	color: var(--text);
+	background-color: var(--background);
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	background-color: var(--background);
+}
+
+a {
+	color: var(--text);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--secondary);
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	color: var(--darkBlue);
+	padding: 0;
+	margin: 0;
+}
