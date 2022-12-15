@@ -12,12 +12,14 @@ class Showcase extends Component {
 					description: "A simple e-commerce site.",
 					image: "portershop.png",
 					link: "https://porter-shop.herokuapp.com/",
+					stack: ["JQuery", "Node", "Express", "MongoDB"],
 				},
 				{
 					title: "Covid Correlator",
 					description: "A data visualization tool for COVID-19.",
 					image: "covidcorrelator.png",
 					link: "https://covid-correlator.herokuapp.com/",
+					stack: ["React", "Node", "Express"],
 				},
 				{
 					title: "Permanence Break",
@@ -25,13 +27,7 @@ class Showcase extends Component {
 						"Created in Unity in a week for the Brackeys Game Jam. ranked #73 overall out of 1.6k entries.",
 					image: "permanencebreak.png",
 					link: "https://itch.io/jam/brackeys-7/rate/1418613",
-				},
-				{
-					title: "Permanence Break",
-					description:
-						"Created in Unity in a week for the Brackeys Game Jam. ranked #73 overall out of 1.6k entries.",
-					image: "permanencebreak.png",
-					link: "https://itch.io/jam/brackeys-7/rate/1418613",
+					stack: ["C#", "Unity", "Blender"],
 				},
 				{
 					title: "Permanence Break",
@@ -64,6 +60,10 @@ class Showcase extends Component {
 									<p>{project.description}</p>
 									<Link to={project.link}>View</Link>
 								</div>
+								{/* tech stack icons */}
+								<span className="showcaseItemstack">
+
+								</span>
 							</div>
 						);
 					})}

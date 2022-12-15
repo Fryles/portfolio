@@ -33,7 +33,7 @@ html {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	font-size: calc(15px + 0.5vw);
+	font-size: calc(15.4px + 0.5vw);
 	color: var(--text);
 	background-color: var(--background);
 }
@@ -62,4 +62,20 @@ button {
 	color: var(--darkBlue);
 	padding: 0;
 	margin: 0;
+}
+
+.logo {
+	/* if darkmode invert colors */
+	filter: var(--blackImgFilter);
+	padding: 0.5rem;
+}
+
+.logo:hover {
+	/* for --secondary */
+	filter: invert(28%) sepia(78%) saturate(1346%) hue-rotate(309deg)
+		brightness(93%) contrast(95%);
+	/* for --primary */
+	/* filter: invert(30%) sepia(53%) saturate(509%) hue-rotate(182deg)
+		brightness(84%) contrast(84%); */
+	cursor: pointer;
 }

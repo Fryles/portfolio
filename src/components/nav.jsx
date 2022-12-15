@@ -29,14 +29,18 @@ class Nav extends Component {
 				</div>
 				<div className="navButtons">
 					<a href="https://github.com/fryles" rel="nofollow">
-						<img className="navLogo" src="icons/github.png" alt="Github" />
+						<img className="navLogo logo" src="icons/github.png" alt="Github" />
 					</a>
 					<a href="https://linkedin.com/in/fryles" rel="nofollow">
-						<img className="navLogo" src="icons/linkedin.png" alt="LinkedIn" />
+						<img
+							className="navLogo logo"
+							src="icons/linkedin.png"
+							alt="LinkedIn"
+						/>
 					</a>
 					<button>
 						<img
-							className="navLogo"
+							className="navLogo logo"
 							src="icons/darkmode.png"
 							alt="Dark/Light Mode"
 							onClick={this.toggleTheme}

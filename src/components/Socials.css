@@ -1,0 +1,11 @@
+.socials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.socialsLogo {
+	height: 3rem;
+	width: auto;
+}
