@@ -35,13 +35,11 @@
 	flex-grow: 1;
 	width: auto;
 	height: 100%;
-	color: var(--text);
-}
-.heroRight li {
-	padding: 0.5rem 0;
 }
 @media screen and (max-width: 600px) {
 	.heroLeft {
+		width: 100%;
+		font-size: 0.9rem;
 		text-align: center;
 		flex-wrap: wrap;
 		min-width: 0;
@@ -59,8 +57,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 	font-size: 1rem;
 	align-self: center;
 	padding: 0.5rem 1rem;
+}
+
+#socialsHook {
+	padding-top: 1rem;
 }

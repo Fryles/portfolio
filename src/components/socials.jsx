@@ -15,8 +15,8 @@ class Socials extends Component {
 					link: "https://linkedin.com/in/fryles",
 				},
 				{
-					name: "Email",
-					link: "mailto:mylesnotmyemail@gmail.com",
+					name: "Instagram",
+					link: "https://instagram.com/notfryles",
 				},
 			],
 		};

@@ -1,13 +1,13 @@
 /* Dark mode (DEFAULT(Cause its better))*/
 :root {
-	--primary: #2d3b5b;
-	--secondary: #b46766;
-	--tertiary: #7a698b;
-	--lightBackground: #333636;
+	--primary: #e68346;
+	--secondary: #e75a6d;
+	--lightBackground: #3a3a3a;
 	--background: #1c1c1e;
 	--darkBackground: #070707;
 	--text: #fffdf7;
 	--darkText: #17161b;
+	--gradient: linear-gradient(to right, #8a2387, #e94057, #f27121);
 	--blackImgFilter: invert(97%) sepia(97%) saturate(12%) hue-rotate(197deg)
 		brightness(105%) contrast(104%);
 	--whiteImgFilter: ;
@@ -15,11 +15,9 @@
 /* Light mode */
 [data-theme="light"] {
 	--primary: #284b63;
-	--darkBlue: #0b4f6c;
 	--secondary: #b46766;
-	--darkRed: #8d4043;
-	--lightBackground: #c4e9d0;
-	--background: #d7d1cf;
+	--lightBackground: #cacaca;
+	--background: #f0f0f0;
 	--darkBackground: #353535;
 	--text: #000000;
 	--darkText: #ffffff;
@@ -45,6 +43,7 @@ body {
 	margin: 0;
 	font-family: "Montserrat", sans-serif;
 	background-color: var(--background);
+	transition: 300ms;
 }
 
 a {
@@ -71,11 +70,5 @@ button {
 }
 
 .logo:hover {
-	/* for --secondary */
-	filter: invert(28%) sepia(78%) saturate(1346%) hue-rotate(309deg)
-		brightness(93%) contrast(95%);
-	/* for --primary */
-	/* filter: invert(30%) sepia(53%) saturate(509%) hue-rotate(182deg)
-		brightness(84%) contrast(84%); */
 	cursor: pointer;
 }

@@ -1,9 +1,8 @@
 .nav {
 	font-family: "Sono", sans-serif;
 	background-color: var(--lightBackground);
-	height: 7vh;
-	max-height: 3rem;
-	padding: 1rem;
+	height: auto;
+	padding: 0.5rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -22,7 +21,7 @@
 }
 
 .navLogo {
-	height: 2rem;
+	height: 2.2rem;
 	width: auto;
 }
 
