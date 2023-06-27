@@ -24,8 +24,12 @@ class Socials extends Component {
 	render() {
 		return (
 			<div className="socials">
-				{this.state.socials.map((social) => (
-					<a href={social.link} target="_blank" rel="noopener noreferrer">
+				{this.state.socials.map((social, i) => (
+					<a
+						href={social.link}
+						key={i}
+						target="_blank"
+						rel="noopener noreferrer">
 						<img
 							className="socialsLogo logo"
 							src={`icons/${social.name.toLowerCase()}.png`}

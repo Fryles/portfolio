@@ -3,6 +3,7 @@ import "./Showcase.css";
 import ShowcaseItem from "./showcaseItem";
 
 function shadeColor(hexColor, magnitude) {
+	hexColor = hexColor.replace("#", "");
 	if (hexColor.length === 6) {
 		const decimalColor = parseInt(hexColor, 16);
 		let r = (decimalColor >> 16) + magnitude;
@@ -20,6 +21,40 @@ function shadeColor(hexColor, magnitude) {
 	}
 }
 
+function hexToRgb(hex) {
+	var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+	return result
+		? [
+				parseInt(result[1], 16),
+				parseInt(result[2], 16),
+				parseInt(result[3], 16),
+		  ]
+		: null;
+}
+
+function componentToHex(c) {
+	var hex = c.toString(16);
+	return hex.length === 1 ? "0" + hex : hex;
+}
+
+function rgbToHex(r, g, b) {
+	return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+function blendColor(color1, color2) {
+	color1 = hexToRgb(color1);
+	color2 = hexToRgb(color2);
+	var w1 = 0.5;
+	var w2 = 1 - w1;
+	var rgb = [
+		Math.round(color1[0] * w1 + color2[0] * w2),
+		Math.round(color1[1] * w1 + color2[1] * w2),
+		Math.round(color1[2] * w1 + color2[2] * w2),
+	];
+	rgb = rgbToHex(rgb[0], rgb[1], rgb[2]);
+	return rgb;
+}
+
 class Showcase extends Component {
 	constructor(props) {
 		super(props);
@@ -32,8 +67,8 @@ class Showcase extends Component {
 					image: "portershop.png",
 					link: "https://github.com/Fryles/PorterShop",
 					stack: ["JQuery", "Node.js", "Express", "MongoDB"],
-					color: "FF5051",
-					sizeClass: "1/3",
+					color: "DB8181",
+					colorEnd: "b36d78",
 				},
 				{
 					title: "Covid Correlator",
@@ -41,8 +76,8 @@ class Showcase extends Component {
 					image: "covidcorrelator.png",
 					link: "https://github.com/Fryles/Covid-Correlator",
 					stack: ["React", "Node.js", "Express"],
-					color: "df7dff",
-					sizeClass: "1/3",
+					color: "A04181",
+					colorEnd: "C37d48",
 				},
 				{
 					title: "Permanence Break",
@@ -51,8 +86,8 @@ class Showcase extends Component {
 					image: "permanencebreak.png",
 					link: "https://itch.io/jam/brackeys-7/rate/1418613",
 					stack: ["C Sharp", "Unity", "Blender"],
-					color: "909dff",
-					sizeClass: "1/3",
+					color: "4DA0B0",
+					colorEnd: "d39d38",
 				},
 				{
 					title: "Canvas To Calendar",
@@ -61,8 +96,8 @@ class Showcase extends Component {
 					image: "permanencebreak.png",
 					link: "hhttps://github.com/Fryles/canvas-to-calendar",
 					stack: ["Javascript", "Google Calendar", "Google Chrome"],
-					color: "9e68fc",
-					sizeClass: "1/2",
+					color: "aa4b6b",
+					colorEnd: "3b8d99",
 				},
 			],
 		};
@@ -80,17 +115,24 @@ class Showcase extends Component {
 						return (
 							<ShowcaseItem
 								style={{
-									backgroundColor: shadeColor(project.color, -100),
+									background:
+										"linear-gradient(45deg, #" +
+										project.color +
+										", #" +
+										project.colorEnd +
+										")",
 									padding: "0 1rem",
 									width: "fit-content",
-									height: "100%",
 								}}
 								key={index}
 								onClick={() => window.open(project.link)}>
 								<h3
 									style={{
-										color: shadeColor(project.color, 100),
 										margin: "0.7rem 0",
+										color: shadeColor(
+											blendColor(project.color, project.colorEnd),
+											120
+										),
 									}}>
 									{project.title}
 								</h3>
@@ -105,8 +147,8 @@ class Showcase extends Component {
 												height={"25px"}
 												key={index}
 												src={`https://img.shields.io/badge/-${tech}-${shadeColor(
-													project.color,
-													-50
+													blendColor(project.color, project.colorEnd),
+													-30
 												).replace("#", "")}?style=flat&
 												logo=${tech}&
 												labelColor=202020&
