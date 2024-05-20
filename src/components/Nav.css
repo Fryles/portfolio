@@ -1,6 +1,6 @@
 .nav {
+	z-index: 10;
 	font-family: "Sono", sans-serif;
-	background-color: var(--lightBackground);
 	height: auto;
 	padding: 0.1rem 0.5rem;
 	display: flex;
@@ -8,6 +8,26 @@
 	align-items: center;
 	font-size: calc(0.8rem + 0.5vw);
 	flex-wrap: wrap;
+	/* frosted glass */
+	backdrop-filter: blur(5px);
+	border-radius: 0.5rem;
+	box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
+	margin: 1rem;
+	/* gradient animation */
+
+	background: linear-gradient(
+		20deg,
+		rgba(154, 66, 172, 0.8),
+		rgba(221, 131, 75, 0.8)
+	);
+	background-size: 200% 200%;
+	-webkit-animation: gradAnim 10s ease infinite;
+	-moz-animation: gradAnim 10s ease infinite;
+	animation: gradAnim 10s ease infinite;
+	/* end gradient animation */
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 1rem;
 }
 /*justify center if mobile*/
 @media only screen and (max-width: 500px) {
@@ -28,6 +48,44 @@
 	width: auto;
 }
 
+.navLogo:hover {
+	filter: drop-shadow(0 0 0.3rem #000) var(--whiteImgFilter);
+}
+
 .navLinks a {
 	padding: 0 0.5rem;
+}
+/* keyfgrames */
+@-webkit-keyframes gradAnim {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@-moz-keyframes gradAnim {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradAnim {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

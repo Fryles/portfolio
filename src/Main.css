@@ -14,9 +14,9 @@
 }
 /* Light mode */
 [data-theme="light"] {
-	--primary: #284b63;
-	--secondary: #b46766;
-	--lightBackground: #cacaca;
+	--primary: #975a22;
+	--secondary: #592369;
+	--lightBackground: #d6d1d1;
 	--background: #f0f0f0;
 	--darkBackground: #353535;
 	--text: #000000;
@@ -49,10 +49,11 @@ body {
 a {
 	color: var(--text);
 	text-decoration: none;
+	transition: color 200ms;
 }
 
 a:hover {
-	color: var(--secondary);
+	color: var(--darkText);
 }
 
 button {
@@ -67,6 +68,7 @@ button {
 	/* if darkmode invert colors */
 	filter: var(--blackImgFilter);
 	padding: 0.5rem;
+	transition: filter 200ms;
 }
 
 .logo:hover {

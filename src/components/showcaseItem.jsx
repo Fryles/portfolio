@@ -134,7 +134,7 @@ export default class ShowcaseItem extends React.Component {
 								transition: "all 0.1s ease-out",
 								zIndex: "4",
 								...(this.state.layersTransform[idx]
-									? this.state.layersTransform[idx]
+									? this.state.layersTransform[idx === 0 ? 2 : 1]
 									: {}),
 							},
 						})

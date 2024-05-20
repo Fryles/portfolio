@@ -13,6 +13,7 @@ h1 {
 	flex-direction: row;
 	align-items: center;
 	letter-spacing: 0.06rem;
+	padding-top: 0;
 }
 
 .heroLeft {

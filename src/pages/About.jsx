@@ -6,7 +6,7 @@ function About() {
 		<div>
 			<Nav />
 			<h1>Hello again!</h1>
-			<div class="rowFlex">
+			<div className="rowFlex">
 				<img className="bigMe" src="me.png" alt="Myles (me)" />
 				<p>
 					Lets get to know each other a little better! I'm a 22 year old student

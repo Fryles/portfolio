@@ -80,19 +80,29 @@ class Showcase extends Component {
 					colorEnd: "C37d48",
 				},
 				{
+					title: "Seagull Saftey",
+					description:
+						"An interactive web demo to raise awareness for seagull safety.",
+					image: "seagullsafety.png",
+					link: "https://github.com/Fryles/SeagullSaftey",
+					stack: ["Javascript", "JQuery", "HTML5", "CSS3", "Adobe Illustrator"],
+					color: "1E90FF",
+					colorEnd: "AAA06E",
+				},
+				{
 					title: "Permanence Break",
 					description:
 						"An entry in the Brackeys Game Jam, created in Unity in a just a week!",
 					image: "permanencebreak.png",
 					link: "https://itch.io/jam/brackeys-7/rate/1418613",
 					stack: ["Csharp", "Unity", "Blender"],
-					color: "4DA0B0",
-					colorEnd: "d39d38",
+					color: "6f69c9",
+					colorEnd: "87c969",
 				},
 				{
 					title: "Canvas To Calendar",
 					description:
-						"A Chrome extension to consolidate and customize your academic calendar and experience.",
+						"A Chrome extension to extend Canvas LMS with GCal integration.",
 					image: "permanencebreak.png",
 					link: "https://github.com/Fryles/canvas-to-calendar",
 					stack: ["Javascript", "Google Calendar", "Google Chrome"],
@@ -104,7 +114,7 @@ class Showcase extends Component {
 					description: "This website! My personal portfolio.",
 					image: "portfolio.png",
 					link: "https://fryles.dev",
-					stack: ["React", "Javascript", "CSS"],
+					stack: ["React", "GitHubPages", "Adobe Illustrator", "Lighthouse"],
 					color: "8A2387",
 					colorEnd: "F27121",
 				},
@@ -138,10 +148,7 @@ class Showcase extends Component {
 								<h3
 									style={{
 										margin: "0.7rem 0",
-										color: shadeColor(
-											blendColor(project.color, project.colorEnd),
-											120
-										),
+										color: "white",
 									}}>
 									{project.title}
 								</h3>
