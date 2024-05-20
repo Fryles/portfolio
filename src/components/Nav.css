@@ -2,7 +2,7 @@
 	font-family: "Sono", sans-serif;
 	background-color: var(--lightBackground);
 	height: auto;
-	padding: 0.5rem;
+	padding: 0.1rem 0.5rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -24,10 +24,10 @@
 }
 
 .navLogo {
-	height: 2.2rem;
+	height: 2rem;
 	width: auto;
 }
 
 .navLinks a {
-	padding: 0.5rem;
+	padding: 0 0.5rem;
 }

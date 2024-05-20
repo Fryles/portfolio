@@ -9,11 +9,10 @@ export default class Hero extends Component {
 				<div className="heroLeft">
 					<h1>Hello There, I'm Myles</h1>
 					<div className="heroIntro">
-						<img className="bigMe" src="me.png" alt="Myles (me)" />
 						{/* speech bubble */}
 						I'm a developer currently studying Computer Science at UCSC.
-						<br /> I am interested in full-stack web development, game
-						development, and machine learning applications.
+						<br /> I am interested in full-stack web development, and love
+						getting creative with code.
 					</div>
 					<span id="socialsHook">
 						Want to get in touch? <Socials />

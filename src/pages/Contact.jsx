@@ -1,14 +1,12 @@
 import React from "react";
 import Nav from "../components/nav";
+import Socials from "../components/socials";
 function Contact() {
 	return (
 		<div>
 			<Nav />
-			<p>
-				Apparently recaptcha needs a backend, which makes sense and all but id
-				like to make sure you're not a robot before you send me an email. So for
-				now, reach out to me through linkedin or github.
-			</p>
+			<h1>Drop a line!</h1>
+			<Socials />
 		</div>
 	);
 }

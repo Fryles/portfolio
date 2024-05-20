@@ -24,8 +24,8 @@ class Nav extends Component {
 				</div> */}
 				<div className="navLinks">
 					<Link to="/">/Home</Link>
-					<Link to="/about">/About</Link>
-					<Link to="/contact">/Contact</Link>
+					<Link to="/About">/About</Link>
+					<Link to="/Contact">/Contact</Link>
 				</div>
 				<div className="navButtons">
 					<a href="https://github.com/fryles" rel="nofollow">

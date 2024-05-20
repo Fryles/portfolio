@@ -1,0 +1,21 @@
+/* center all ps and divs */
+p {
+	text-align: center;
+	max-width: 60%;
+	margin: 0 auto;
+}
+h1 {
+	text-align: center;
+}
+.bigMe {
+	width: 25%;
+	max-width: 350px;
+	height: auto;
+}
+.rowFlex {
+	padding: 0 2rem;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
