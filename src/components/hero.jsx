@@ -10,8 +10,8 @@ export default class Hero extends Component {
 					<h1>Hello There, I'm Myles</h1>
 					<div className="heroIntro">
 						{/* speech bubble */}
-						I'm a developer currently studying Computer Science at UCSC.
-						<br /> I am interested in full-stack web development, and love
+						I'm a developer currently working at Santa Cruz Biotechnology Inc.
+						<br /> I'm interested in full-stack web development, and love
 						getting creative with code.
 					</div>
 					<span id="socialsHook">
