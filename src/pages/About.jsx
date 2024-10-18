@@ -9,10 +9,7 @@ function About() {
 			<div className="rowFlex">
 				<img className="bigMe" src="me.png" alt="Myles (me)" />
 				<p>
-					Lets get to know each other a little better! I'm a 22 year old student
-					at UC Santa Cruz, studying Computer Science (Go Slugs!).<br></br> I'm
-					currently looking for oppurtunities in the software industry, so if
-					you're interested in hiring, please reach out!<br></br> I'm also open
+					Lets get to know each other a little better! I'm a 23 year old currently employed at Santa Cruz Biotechnology Inc.<br></br> I've completed my B.S. in Computer Science at UCSC as of June 20204<br></br> I'm open
 					to contract work relating to branding, marketing, and web development.
 					<br></br>
 				</p>
