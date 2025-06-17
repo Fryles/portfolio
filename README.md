@@ -1,1 +1,1 @@
-# Repository for my website, fryles.dev
+# Repository for fryles.dev
