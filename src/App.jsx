@@ -5,9 +5,7 @@ import Contact from "./pages/Contact";
 import "./Main.css";
 
 function App() {
-	const currentTheme = localStorage.getItem("theme")
-		? localStorage.getItem("theme")
-		: null;
+	const currentTheme = localStorage.getItem("theme") ? localStorage.getItem("theme") : null;
 	if (currentTheme) {
 		document.documentElement.setAttribute("data-theme", currentTheme);
 	} else {
@@ -18,7 +16,7 @@ function App() {
 		<div className="App">
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="about" element={<About />} />
+				{/* <Route path="about" element={<About />} /> */}
 				<Route path="contact" element={<Contact />} />
 			</Routes>
 		</div>

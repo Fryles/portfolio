@@ -11,7 +11,7 @@ export default class Hero extends Component {
 					<div className="heroIntro">
 						{/* speech bubble */}
 						I'm a developer currently working at Santa Cruz Biotechnology Inc.
-						<br /> I'm interested in full-stack web development, and love
+						<br /> I'm interested in everything from eProcurement to technical marketing, and love
 						getting creative with code.
 					</div>
 					<span id="socialsHook">

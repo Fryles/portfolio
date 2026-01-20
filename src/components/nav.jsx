@@ -24,7 +24,7 @@ class Nav extends Component {
 				</div> */}
 				<div className="navLinks">
 					<Link to="/">/Home</Link>
-					<Link to="/About">/About</Link>
+					{/* <Link to="/About">/About</Link> */}
 					<Link to="/Contact">/Contact</Link>
 				</div>
 				<div className="navButtons">
@@ -32,19 +32,10 @@ class Nav extends Component {
 						<img className="navLogo logo" src="icons/github.png" alt="Github" />
 					</a>
 					<a href="https://linkedin.com/in/fryles" rel="nofollow">
-						<img
-							className="navLogo logo"
-							src="icons/linkedin.png"
-							alt="LinkedIn"
-						/>
+						<img className="navLogo logo" src="icons/linkedin.png" alt="LinkedIn" />
 					</a>
 					<button>
-						<img
-							className="navLogo logo"
-							src="icons/darkmode.png"
-							alt="Dark/Light Mode"
-							onClick={this.toggleTheme}
-						/>
+						<img className="navLogo logo" src="icons/darkmode.png" alt="Dark/Light Mode" onClick={this.toggleTheme} />
 					</button>
 				</div>
 			</div>
