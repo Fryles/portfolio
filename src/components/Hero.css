@@ -1,36 +1,73 @@
 h1 {
 	letter-spacing: 0.2rem;
+	font-size: 1.4em;
+}
+
+#mySvg {
+	min-width: 200px;
+	width: 30vw;
+	max-width: 350px;
+	margin-top: 2em;
 }
 
 .hero {
+	box-sizing: border-box;
 	letter-spacing: normal;
 	line-height: 1.5;
 	width: 100%;
+	max-width: 44rem;
+	margin: 0 auto;
+	text-align: center;
 	height: auto;
 	display: flex;
-	padding: 2rem 0;
-	justify-content: space-evenly;
-	flex-direction: row;
+	padding: 0 1rem 2rem;
+	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 	letter-spacing: 0.06rem;
 	padding-top: 0;
 }
 
+.hero>svg {
+	display: block;
+	width: 100%;
+	max-width: 18rem;
+	height: auto;
+}
+
 .heroLeft {
-	width: 70%;
-	height: 100%;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 44rem;
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
 	justify-content: center;
+	align-items: center;
 	text-align: center;
 }
+
 .heroIntro {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	margin: 1rem auto;
-	max-width: 75%;
+	width: 100%;
+	max-width: 36rem;
+	letter-spacing: .04rem;
+}
+
+.heroIntro p {
+	max-width: 100%;
+	margin: 0 0 2.2rem;
+}
+
+.fine {
+	font-size: .7em;
+	line-height: 1.2;
+	letter-spacing: .2em;
+	margin-bottom: .6rem !important;
+	font-style: italic;
 }
 
 .heroRight {
@@ -40,22 +77,27 @@ h1 {
 	width: auto;
 	min-width: 240px;
 	height: 100%;
+
 }
+
 @media screen and (max-width: 620px) {
 	.hero {
-		flex-direction: column-reverse;
+		flex-direction: column;
 	}
+
 	.heroLeft {
 		width: 100%;
 		font-size: 0.9rem;
 		text-align: center;
 		flex-wrap: wrap;
 		min-width: 0;
-		padding: 0;
+		padding: 0 1rem;
 	}
+
 	.bigMe {
 		width: 40%;
 	}
+
 	.heroRight {
 		padding-top: 1.4rem;
 		padding-right: 0;
@@ -75,4 +117,8 @@ h1 {
 
 #socialsHook {
 	padding-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
 }

@@ -1,5 +1,19 @@
-/* Dark mode (DEFAULT(Cause its better))*/
 :root {
+	color-scheme: light;
+	--primary: #975a22;
+	--secondary: #592369;
+	--lightBackground: #d6d1d1;
+	--background: #fdfdfd;
+	--darkBackground: #353535;
+	--text: #000000;
+	--darkText: #ffffff;
+	--gradient: linear-gradient(to right, #8a2387, #e94057, #f27121);
+	--blackImgFilter: ;
+	--whiteImgFilter: invert(97%) sepia(97%) saturate(12%) hue-rotate(197deg) brightness(105%) contrast(104%);
+}
+
+[data-theme="dark"] {
+	color-scheme: dark;
 	--primary: #e68346;
 	--secondary: #e75a6d;
 	--lightBackground: #3a3a3a;
@@ -8,22 +22,8 @@
 	--text: #fffdf7;
 	--darkText: #17161b;
 	--gradient: linear-gradient(to right, #8a2387, #e94057, #f27121);
-	--blackImgFilter: invert(97%) sepia(97%) saturate(12%) hue-rotate(197deg)
-		brightness(105%) contrast(104%);
+	--blackImgFilter: invert(97%) sepia(97%) saturate(12%) hue-rotate(197deg) brightness(105%) contrast(104%);
 	--whiteImgFilter: ;
-}
-/* Light mode */
-[data-theme="light"] {
-	--primary: #975a22;
-	--secondary: #592369;
-	--lightBackground: #d6d1d1;
-	--background: #f0f0f0;
-	--darkBackground: #353535;
-	--text: #000000;
-	--darkText: #ffffff;
-	--blackImgFilter: ;
-	--whiteImgFilter: invert(97%) sepia(97%) saturate(12%) hue-rotate(197deg)
-		brightness(105%) contrast(104%);
 }
 
 html {
@@ -31,7 +31,7 @@ html {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	font-size: calc(15.4px + 0.5vw);
+	font-size: calc(15px + 0.5vw);
 	color: var(--text);
 	background-color: var(--background);
 }
@@ -41,7 +41,7 @@ body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Serifed Mono", monospace;
 	background-color: var(--background);
 	transition: 300ms;
 }
@@ -53,7 +53,7 @@ a {
 }
 
 a:hover {
-	color: var(--darkText);
+	filter: drop-shadow(0 0 0.3rem #474747);
 }
 
 button {

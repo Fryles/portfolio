@@ -7,10 +7,10 @@ class Nav extends Component {
 	toggleTheme() {
 		if (document.documentElement.getAttribute("data-theme") === "dark") {
 			document.documentElement.setAttribute("data-theme", "light");
-			localStorage.setItem("theme", "light");
+			localStorage.setItem("themePreference", "light");
 		} else {
 			document.documentElement.setAttribute("data-theme", "dark");
-			localStorage.setItem("theme", "dark");
+			localStorage.setItem("themePreference", "dark");
 		}
 	}
 
@@ -27,7 +27,7 @@ class Nav extends Component {
 					{/* <Link to="/About">/About</Link> */}
 					<Link to="/Contact">/Contact</Link>
 				</div>
-				<div className="navButtons">
+				{/* <div className="navButtons">
 					<a href="https://github.com/fryles" rel="nofollow">
 						<img className="navLogo logo" src="icons/github.png" alt="Github" />
 					</a>
@@ -37,7 +37,7 @@ class Nav extends Component {
 					<button>
 						<img className="navLogo logo" src="icons/darkmode.png" alt="Dark/Light Mode" onClick={this.toggleTheme} />
 					</button>
-				</div>
+				</div> */}
 			</div>
 		);
 	}

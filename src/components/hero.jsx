@@ -6,19 +6,6 @@ export default class Hero extends Component {
 	render() {
 		return (
 			<div className="hero">
-				<div className="heroLeft">
-					<h1>Hello There, I'm Myles</h1>
-					<div className="heroIntro">
-						{/* speech bubble */}
-						I'm a developer currently working at Santa Cruz Biotechnology Inc.
-						<br /> I'm interested in everything from eProcurement to technical marketing, and love
-						getting creative with code.
-					</div>
-					<span id="socialsHook">
-						Want to get in touch? <Socials />
-					</span>
-				</div>
-				<div className="heroRight">
 					<svg
 						version="1.1"
 						x="0px"
@@ -95,7 +82,27 @@ export default class Hero extends Component {
 							</g>
 						</g>
 					</svg>
-				</div>
+					<h1>Hello There, I'm Myles</h1>
+				<div className="heroIntro">
+					<p className="fine">Who am I?</p>
+					<p>I'm an EDI developer currently working at Santa Cruz Biotechnology Inc.</p>
+
+
+					<p className="fine">What do I do?</p>
+					<p>I build and maintain the systems that live in-between customers, applications, trading partners, and enterprise data.</p>
+
+					<p className="fine">What’s my experience?</p>
+					<p>My background combines web development and marketing with hands-on experience across EDI/X12, cXML, PunchOut, AS2, APIs, SAP EDI, SQL databases, and ERP integrations.</p>
+
+					<p className="fine">Where am I headed?</p>
+					<p>I'm extending that experience with AI and agentic commerce. Exploring how LLM-powered applications and autonomous agents can interface with structured product data, commerce APIs, procurement workflows, and traditional EDI infrastructure.</p>
+
+					<p className="fine">TLDR?</p>
+					<p>I'm a developer focused on applying AI and agentic commerce towards EDI and enterprise integration.</p>
+					</div>
+					<span id="socialsHook">
+						Want to get in touch? <Socials />
+					</span>
 			</div>
 		);
 	}
