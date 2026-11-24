@@ -85,23 +85,20 @@ export default class Hero extends Component {
 					<h1>Hello There, I'm Myles</h1>
 				<div className="heroIntro">
 					<p className="fine">Who am I?</p>
-					<p>I'm an EDI developer currently working at Santa Cruz Biotechnology Inc.</p>
+					<p>I'm an EDI developer currently employed at Santa Cruz Biotechnology Inc.</p>
 
 
 					<p className="fine">What do I do?</p>
-					<p>I build and maintain the systems that live in-between customers, applications, trading partners, and enterprise data. Connecting procurement and supply chain workflows through reliable integrations and data transformation.</p>
+					<p>I build and maintain the systems that live in-between customers, applications, trading partners, and enterprise data. Connecting procurement, supply chain, and accounting workflows to automate business processes.</p>
 
 					<p className="fine">What’s my experience?</p>
-					<p>My background combines a B.S in Comp Sci from UCSC, web development, IT, and marketing with hands-on experience across EDI/X12, cXML, PunchOut, AS2, APIs, SAP EDI, distributed SQL databases, and ERP integrations. I also run several connected Docker instances on my home-lab to experiment with self-hosted solutions.</p>
-
-					<p className="fine">How do I work?</p>
-					<p>I focus on understanding business requirements, tracing data quality issues to their source, and turning complex integration problems into maintainable code. Keeping the people who depend on those systems in mind.</p>
+					<p>My background combines a B.S. in Comp Sci from UCSC, years of web development, hands on IT, and technical marketing. Specifically, my work experience spans across EDI/X12, cXML, digital marketing, and enterprise integration. I also maintain a home-lab to experiment with self-hosted solutions.</p>
 
 					<p className="fine">Where am I headed?</p>
-					<p>I'm looking to bring that experience into supply chain software, data pipelines, and AI powered solutions. Exploring how reliable data and well-built systems can help teams and AI agents understand operational tradeoffs and improve fulfillment.</p>
+					<p>I'm looking to bring my experience into software, web development, and AI powered solutions. Exploring how reliable data and well-built systems can help teams and AI agents mesh with each other.</p>
 
 					<p className="fine">TLDR?</p>
-					<p>I'm a developer focused on EDI, enterprise integration, and software that helps supply chain operations run better.</p>
+					<p>I'm a flexible developer currently focused on EDI, digital marketing, and software that helps supply chain operations run better.</p>
 					</div>
 					<span id="socialsHook">
 						Want to get in touch? <Socials />
